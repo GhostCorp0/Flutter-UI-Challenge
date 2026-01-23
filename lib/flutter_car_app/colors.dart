@@ -19,3 +19,10 @@ const LinearGradient backGroundGradient = LinearGradient(
   end: Alignment.bottomCenter,
   colors: [Color.fromARGB(255, 28, 30, 35),Color.fromARGB(255, 48, 48,58)],
 );
+
+const LinearGradient kCardGradient = LinearGradient(
+  begin: Alignment.topCenter,
+  end: Alignment.bottomCenter,
+  colors: [Color.fromARGB(255, 40, 40, 50),Color.fromARGB(255,40,40,45)],
+);
+

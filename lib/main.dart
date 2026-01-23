@@ -38,7 +38,6 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           primarySwatch: Colors.blue,
           iconTheme: IconThemeData(color: Color.fromARGB(255, 101, 101, 101)),
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           textTheme: TextTheme(bodyMedium: TextStyle(color: Colors.white),
               bodyLarge: TextStyle(color: Colors.white),
               bodySmall: TextStyle(color: Colors.white))

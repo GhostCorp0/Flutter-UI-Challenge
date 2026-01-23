@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenge/flutter_car_app/colors.dart';
 import 'package:flutter_ui_challenge/flutter_car_app/home_screen.dart';
+import 'package:flutter_ui_challenge/flutter_car_app/settings_screen.dart';
 
 class BaseScreen extends StatefulWidget {
   const BaseScreen({super.key});
@@ -19,7 +20,9 @@ class _BaseScreenState extends State<BaseScreen> {
   Widget _bottomAppBarIcon({required int index, required IconData icon}) {
     return IconButton(
       onPressed: () {
-        navigateTo(index);
+        setState(() {
+          navigateTo(index);
+        });
       },
       icon: Icon(
         icon,
@@ -33,6 +36,8 @@ class _BaseScreenState extends State<BaseScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomAppBar(
+        color: kBottomAppBarColor,
+        elevation: 0,
         child: SafeArea(
           child: Container(
             height: 70,
@@ -70,10 +75,10 @@ class _BaseScreenState extends State<BaseScreen> {
                       ],
                     ),
                   ),
-                  _bottomAppBarIcon(icon: Icons.settings, index: 3),
+                  _bottomAppBarIcon(icon: Icons.settings, index: 2),
                   _bottomAppBarIcon(
                     icon: Icons.account_circle_rounded,
-                    index: 4,
+                    index: 3,
                   ),
                 ],
               ),
@@ -90,7 +95,7 @@ class _BaseScreenState extends State<BaseScreen> {
           children: [
             HomeScreen(),
             Container(child: Center(child: Text("Page 02",style: TextStyle(color: Colors.blue),))),
-            Container(child: Center(child: Text("Page 03",style: TextStyle(color: Colors.blue),))),
+            SettingsScreen(),
             Container(child: Center(child: Text("Page 04",style: TextStyle(color: Colors.blue),))),
           ],
         ),
