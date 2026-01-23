@@ -59,7 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 5.0, bottom: 35),
+                padding: const EdgeInsets.only(top: 5.0, bottom:10),
                 child: Text(
                   "MODEL X",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.w200),
@@ -67,8 +67,8 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               Image.asset("assets/images/homepage_tesla.png"),
               CircularPercentIndicator(
-                radius: 100.0,
-                lineWidth: 20.0,
+                radius: 90.0,
+                lineWidth: 18.0,
                 percent: 0.8,
                 animation: true,
                 center: Center(
@@ -93,11 +93,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 progressColor: kPrimaryColor,
                 backgroundColor: progressBackgroundColor,
               ),
-              SizedBox(height: 50,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SvgPicture.asset("assets/images/lightning.svg"),
+                  SvgPicture.asset("assets/images/lighting.svg"),
                   Padding(
                     padding: const EdgeInsets.only(right: 25.0),
                     child: Text("Charging.. 14 mins remaining"),
