@@ -5,6 +5,8 @@ import 'package:flutter_ui_challenge/digital_alarm_clock/widgets/custom_time_pic
 import 'package:flutter_ui_challenge/electric_car_app/onboarding_page.dart';
 import 'package:flutter_ui_challenge/flutter_car_app/base_screen.dart';
 import 'package:flutter_ui_challenge/package_tracking_app/package_tracking_app.dart';
+import 'package:flutter_ui_challenge/real_estate_app/real_estate_onboarding.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,6 +30,7 @@ class MyApp extends StatelessWidget {
 }*/
 
 //for car app blue theme
+/*
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -43,6 +46,26 @@ class MyApp extends StatelessWidget {
               bodySmall: TextStyle(color: Colors.white))
       ),
       home: BaseScreen(),
+    );
+  }
+}*/
+
+
+//for real estate app
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Color(0xff355738)),
+        useMaterial3: true,
+        primaryColor: Color(0xff355738),
+        textTheme: GoogleFonts.latoTextTheme()
+      ),
+      home:RealEstateOnboarding(),
     );
   }
 }

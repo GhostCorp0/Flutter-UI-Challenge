@@ -37,6 +37,7 @@ dependencies:
   dotted_border: ^3.1.0
   percent_indicator: ^4.2.5
   flutter_svg: ^2.2.3
+  google_fonts: ^8.0.0
 
 dev_dependencies:
   flutter_test:
