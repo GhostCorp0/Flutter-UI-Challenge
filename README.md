@@ -21,4 +21,7 @@ It will contain code i will do while doing Flutter U.I Challenges
 
 <img width="360" height="780" alt="Image" src="https://github.com/user-attachments/assets/dbd86e5d-5bf5-4a43-984a-6d6c6ae33735" />
 
+<img width="360" height="780" alt="Image" src="https://github.com/user-attachments/assets/d453a924-1495-4f84-9dca-bc8b39e1a9cd" />
+<img width="360" height="780" alt="Image" src="https://github.com/user-attachments/assets/c8c0373e-4a4a-4ab7-9a0f-caf898275698" />
+<img width="360" height="780" alt="Image" src="https://github.com/user-attachments/assets/b89cc4e3-12ee-44c4-b955-54bc9afa7d43" />
 
