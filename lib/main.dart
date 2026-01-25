@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenge/api_call_app/ui/api_call_app.dart';
 import 'package:flutter_ui_challenge/car_rental_app/rental_page.dart';
 import 'package:flutter_ui_challenge/digital_alarm_clock/alarm_clock_home.dart';
 import 'package:flutter_ui_challenge/digital_alarm_clock/widgets/custom_time_picker.dart';
@@ -52,6 +53,7 @@ class MyApp extends StatelessWidget {
 
 
 //for real estate app
+/*
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
@@ -66,6 +68,22 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.latoTextTheme()
       ),
       home:RealEstateOnboarding(),
+    );
+  }
+}*/
+
+
+//For api call app
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home:ApiCallApp(),
     );
   }
 }
