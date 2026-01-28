@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/top_up_sheet.dart';
+
 class TopUpPage extends StatefulWidget {
   const TopUpPage({super.key});
 
@@ -58,7 +60,7 @@ class _TopUpPageState extends State<TopUpPage> {
             ),
             Text(
               "Other",
-              style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
             ),
             PaymentProvider(
               image: "assets/images/paypal.jpg",
@@ -101,7 +103,19 @@ class _TopUpPageState extends State<TopUpPage> {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.push(context,MaterialPageRoute(builder:(context)=> TopUpPage()));
+                showModalBottomSheet(
+                  context: context,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.vertical(
+                      top: Radius.circular(20),
+                    ),
+                  ),
+                  builder: (context) => TopUpBottomSheet(
+                    selectedProvider: selectedProvider,
+                    image: getImageForProvider(selectedProvider),
+                    account: getAccountForProvider(selectedProvider),
+                  ),
+                );
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.black,
@@ -120,6 +134,34 @@ class _TopUpPageState extends State<TopUpPage> {
         ),
       ),
     );
+  }
+}
+
+String getAccountForProvider(String provider) {
+  switch (provider) {
+    case 'Bank Of America':
+      return "**** **** ****  1990";
+    case 'U.S Bank':
+      return "**** **** **** 1990";
+    default:
+      return "Easy Payment";
+  }
+}
+
+String getImageForProvider(String provider) {
+  switch (provider) {
+    case 'Bank Of America':
+      return "assets/images/bank_of_america.jpg";
+    case 'U.S Bank':
+      return "assets/images/us_bank.png";
+    case 'Paypal':
+      return "assets/images/paypal.png";
+    case 'Apple pay':
+      return "assets/images/apple.png";
+    case 'Google pay':
+      return "assets/images/google.png";
+    default:
+      return "assets/images/default.png";
   }
 }
 
@@ -153,7 +195,7 @@ class PaymentProvider extends StatelessWidget {
               value: true,
               groupValue: isSelected,
               onChanged: onChanged,
-              activeColor: Color.fromARGB(255,16,80, 98),
+              activeColor: Color.fromARGB(255, 16, 80, 98),
             ),
           ),
           contentPadding: EdgeInsets.all(12),
