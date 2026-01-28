@@ -69,7 +69,7 @@ class _TopUpBottomSheetState extends State<TopUpBottomSheet> {
               ),
               IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.remove),
+                icon: Icon(Icons.add),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.grey[300],
                   shape: RoundedRectangleBorder(

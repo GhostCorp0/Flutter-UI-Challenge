@@ -105,16 +105,32 @@ class _TopUpPageState extends State<TopUpPage> {
               onPressed: () {
                 showModalBottomSheet(
                   context: context,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.vertical(
-                      top: Radius.circular(20),
-                    ),
-                  ),
-                  builder: (context) => TopUpBottomSheet(
-                    selectedProvider: selectedProvider,
-                    image: getImageForProvider(selectedProvider),
-                    account: getAccountForProvider(selectedProvider),
-                  ),
+                  isScrollControlled: true,
+                  backgroundColor: Colors.transparent,
+                  builder: (context) {
+                    return DraggableScrollableSheet(
+                      expand: false,
+                      initialChildSize: 0.7,
+                      minChildSize: 0.4,
+                      maxChildSize: 0.95,
+                      builder: (_, controller) {
+                        return Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+                          ),
+                          child: SingleChildScrollView(
+                            controller: controller,
+                            child: TopUpBottomSheet(
+                              selectedProvider: selectedProvider,
+                              image: getImageForProvider(selectedProvider),
+                              account: getAccountForProvider(selectedProvider),
+                            ),
+                          ),
+                        );
+                      },
+                    );
+                  },
                 );
               },
               style: ElevatedButton.styleFrom(
