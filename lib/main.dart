@@ -5,7 +5,7 @@ import 'package:flutter_ui_challenge/digital_alarm_clock/alarm_clock_home.dart';
 import 'package:flutter_ui_challenge/digital_alarm_clock/widgets/custom_time_picker.dart';
 import 'package:flutter_ui_challenge/dio_app/ui/dio_sample_app.dart';
 import 'package:flutter_ui_challenge/electric_car_app/onboarding_page.dart';
-import 'package:flutter_ui_challenge/fintech_app/fintech_home.dart';
+import 'package:flutter_ui_challenge/fintech_app/pages/fintech_home.dart';
 import 'package:flutter_ui_challenge/flutter_car_app/base_screen.dart';
 import 'package:flutter_ui_challenge/package_tracking_app/package_tracking_app.dart';
 import 'package:flutter_ui_challenge/real_estate_app/real_estate_onboarding.dart';
@@ -118,7 +118,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home:FintechHome(),
+      home:FintechMainPage(),
     );
   }
 }

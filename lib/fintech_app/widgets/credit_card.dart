@@ -58,9 +58,9 @@ class CreditCard extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal:16.0),
                       child: Text(
-                        "\$10,250.00",
+                        "Anabella Angela",
                         style: TextStyle(
-                          fontSize: 24,
+                          fontSize: 17,
                           fontWeight: FontWeight.bold,
                           color: Colors.white
                         ),
