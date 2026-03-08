@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenge/api_call_app/ui/api_call_app.dart';
 import 'package:flutter_ui_challenge/car_rental_app/rental_page.dart';
+import 'package:flutter_ui_challenge/coffe_shop_app/coffee_splash_screen.dart';
 import 'package:flutter_ui_challenge/digital_alarm_clock/alarm_clock_home.dart';
 import 'package:flutter_ui_challenge/digital_alarm_clock/widgets/custom_time_picker.dart';
 import 'package:flutter_ui_challenge/dio_app/ui/dio_sample_app.dart';
@@ -108,6 +109,7 @@ class MyApp extends StatelessWidget {
 }*/
 
 //For Fintech App
+/*
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
@@ -119,6 +121,23 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       home:FintechMainPage(),
+    );
+  }
+}
+*/
+
+//For coffeeShop app
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home:CoffeeSplashScreen(),
     );
   }
 }
