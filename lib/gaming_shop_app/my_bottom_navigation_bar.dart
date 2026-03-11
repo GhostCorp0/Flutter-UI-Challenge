@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:flutter_ui_challenge/flutter_car_app/colors.dart';
+
+import 'gaming_colors.dart';
 
 class MyBottomNavigationBar extends StatelessWidget {
   const MyBottomNavigationBar({super.key});
@@ -24,7 +25,7 @@ class MyBottomNavigationBar extends StatelessWidget {
                   width:30,
                   height: 3,
                   color: kSecondaryColor,
-                ), 
+                ),
                 const Spacer(),
                 SvgPicture.asset("assets/images/icon_home.svg"),
                 const Spacer()

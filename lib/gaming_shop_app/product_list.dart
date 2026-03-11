@@ -63,6 +63,7 @@ class _ProductListState extends State<ProductList> {
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Stack(
+                    clipBehavior: Clip.none,
                     children: [
                       Container(
                         decoration: BoxDecoration(
@@ -126,7 +127,7 @@ class _ProductListState extends State<ProductList> {
                         ),
                       ),
                       Positioned(
-                        right:0,
+                        right:-60,
                         top: 0,
                         bottom: 0,
                         child: Container(

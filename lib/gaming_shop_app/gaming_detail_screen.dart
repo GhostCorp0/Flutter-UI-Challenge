@@ -35,7 +35,7 @@ class GamingDetailScreen extends StatelessWidget {
           ),
           ImageSize(),
           Container(
-            padding: EdgeInsets.symmetric(vertical: 16),
+            padding: EdgeInsets.symmetric(vertical: 16,horizontal:32),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -43,18 +43,19 @@ class GamingDetailScreen extends StatelessWidget {
                   game.name,
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 25,
+                    fontSize: 22,
                     color: kPrimaryTextColor,
                   ),
                 ),
                 SizedBox(height: 10),
                 Rating(),
+                SizedBox(height:10),
                 Text(
                   "Unleash your color with the arrival of four new styles.Each wireless controller comes loaded with the same DUALSHOCK@4 features including touchpad,motion sensors and built-in rechargeable battery.",
-                  style: TextStyle(fontSize: 18, color: kSecondTextColor),
+                  style: TextStyle(fontSize: 16, color: kSecondTextColor),
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(vertical: 32, horizontal: 20),
+                  padding: EdgeInsets.symmetric(vertical:25),
                   child: Row(
                     mainAxisAlignment:MainAxisAlignment.spaceBetween,
                     children: [
@@ -62,7 +63,7 @@ class GamingDetailScreen extends StatelessWidget {
                         "\$${game.price}",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 35, 
+                          fontSize: 35,
                           color: kPrimaryTextColor,
                         ),
                       ),
