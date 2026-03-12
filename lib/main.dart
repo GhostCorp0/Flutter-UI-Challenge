@@ -8,6 +8,7 @@ import 'package:flutter_ui_challenge/dio_app/ui/dio_sample_app.dart';
 import 'package:flutter_ui_challenge/electric_car_app/onboarding_page.dart';
 import 'package:flutter_ui_challenge/fintech_app/pages/fintech_home.dart';
 import 'package:flutter_ui_challenge/flutter_car_app/base_screen.dart';
+import 'package:flutter_ui_challenge/furniture_ecommerce/furniture_ecom_home_screen.dart';
 import 'package:flutter_ui_challenge/gaming_shop_app/gaming_home.dart';
 import 'package:flutter_ui_challenge/package_tracking_app/package_tracking_app.dart';
 import 'package:flutter_ui_challenge/real_estate_app/real_estate_onboarding.dart';
@@ -143,7 +144,8 @@ class MyApp extends StatelessWidget {
   }
 }*/
 
-//For universe planer app
+//For gaming shop app
+/*
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
@@ -155,6 +157,22 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       home: GamingHome(),
+    );
+  }
+}*/
+
+//For ecommerce app
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home: FurnitureEcomHomeScreen(),
     );
   }
 }
