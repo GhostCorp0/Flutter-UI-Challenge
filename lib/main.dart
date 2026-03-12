@@ -10,6 +10,7 @@ import 'package:flutter_ui_challenge/fintech_app/pages/fintech_home.dart';
 import 'package:flutter_ui_challenge/flutter_car_app/base_screen.dart';
 import 'package:flutter_ui_challenge/furniture_ecommerce/furniture_ecom_home_screen.dart';
 import 'package:flutter_ui_challenge/gaming_shop_app/gaming_home.dart';
+import 'package:flutter_ui_challenge/icecream_app/ice_cream_home_screen.dart';
 import 'package:flutter_ui_challenge/package_tracking_app/package_tracking_app.dart';
 import 'package:flutter_ui_challenge/plants_app/plants_home_screen.dart';
 import 'package:flutter_ui_challenge/real_estate_app/real_estate_onboarding.dart';
@@ -198,7 +199,7 @@ class MyApp extends StatelessWidget {
 }*/
 
 //for stozo app
-class MyApp extends StatelessWidget {
+/*class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
@@ -211,6 +212,21 @@ class MyApp extends StatelessWidget {
       home: StozoSplashScreen(),
     );
   }
-}
+}*/
 
+//for icecream home screen
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home: IceCreamHomeScreen(),
+    );
+  }
+}
 
