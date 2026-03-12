@@ -123,11 +123,10 @@ class PlantsDetailScreen extends StatelessWidget {
                             },
                             child: Icon(Icons.arrow_back, size: 30),
                           ),
-                          Image.asset("assets/images/filter_icon.png"),
+                          Image.asset("assets/images/filter_icon.png",height:45,width:45),
                         ],
                       ),
                     ),
-
                     SizedBox(height: 20),
                     Padding(
                       padding: EdgeInsets.only(left: 32),

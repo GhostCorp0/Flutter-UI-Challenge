@@ -13,6 +13,7 @@ import 'package:flutter_ui_challenge/gaming_shop_app/gaming_home.dart';
 import 'package:flutter_ui_challenge/package_tracking_app/package_tracking_app.dart';
 import 'package:flutter_ui_challenge/plants_app/plants_home_screen.dart';
 import 'package:flutter_ui_challenge/real_estate_app/real_estate_onboarding.dart';
+import 'package:flutter_ui_challenge/stojo_app/stojo_splash_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -180,9 +181,8 @@ class MyApp extends StatelessWidget {
 }
 */
 
-
 //for plants app
-class MyApp extends StatelessWidget {
+/*class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
@@ -195,4 +195,22 @@ class MyApp extends StatelessWidget {
       home: PlantsHomeScreen(),
     );
   }
+}*/
+
+//for stozo app
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home: StozoSplashScreen(),
+    );
+  }
 }
+
+
