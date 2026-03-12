@@ -140,7 +140,7 @@ class FurnitureItemDetail extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    width: size.width * 0.64,
+                    width: size.width * 0.60,
                     height: 75,
                     decoration: BoxDecoration(
                       color: Colors.black,
@@ -157,6 +157,7 @@ class FurnitureItemDetail extends StatelessWidget {
                       ),
                     ),
                   ),
+
                   Container(
                     width: size.width * 0.18,
                     height: 75,
