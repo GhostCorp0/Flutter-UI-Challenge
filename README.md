@@ -63,3 +63,7 @@ It will contain code i will do while doing Flutter U.I Challenges
 <img width="360" height="780" alt="Image" src="https://github.com/user-attachments/assets/aedab69f-e2a9-4f63-b91d-f15d7830d138" />
 
 <img width="360" height="780" alt="Image" src="https://github.com/user-attachments/assets/9b8c4b19-a9f8-4046-845b-456d974099b3" />
+
+<img width="360" height="780" alt="Image" src="https://github.com/user-attachments/assets/95fd62d3-4d46-4683-8e17-ecdc163f8fd2" />
+
+<img width="360" height="780" alt="Image" src="https://github.com/user-attachments/assets/ee9b54c7-2a78-4f88-9bcb-c51dc2fef531" />
